@@ -5,11 +5,11 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 8000:8000
+      - 8012:8012
     volumes:
       - .:/app
     environment:
       - APP_ENV=production
-    command: uvicorn app:app --host 80.89.228.71 --port 80 --reload
+    command: uvicorn app:app --host 80.89.228.71  --reload
 
 
