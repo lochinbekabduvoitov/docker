@@ -2,7 +2,7 @@
 FROM python:3.11.2-slim
 
 # Set working directory
-WORKDIR /code
+WORKDIR /app
 
 # Copy application files
 COPY . .
