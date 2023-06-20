@@ -1,14 +1,17 @@
+# Base image
 FROM python:3.11.2-slim
 
+# Set working directory
 WORKDIR /code
 
-COPY ./requirements.txt ./
+# Copy application files
+COPY . .
 
+# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-RUN docker pull lochinbek/fastapi
+# Expose port
+EXPOSE 8000
 
-COPY ./src ./src
-
-
-CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "80","--reload"]
+# Start the application
+CMD [ "python", "main.py" ]
