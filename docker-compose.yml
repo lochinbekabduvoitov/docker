@@ -1,6 +1,6 @@
 services:
   app:
-    build: .
+    image: lochinbek/fastapi
     container_name: fastapi-container
     command: uvicorn src.main:app --host 0.0.0.0 --port 80 --reload
     ports:
