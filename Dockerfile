@@ -10,8 +10,5 @@ COPY . .
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose port
-EXPOSE 8000
-
 # Start the application
-CMD [ "python", "app.py" ]
+CMD [ "uvicorn" ,"app:app" ,"--host", "80.89.228.71","--port","8012","--reload" ]
