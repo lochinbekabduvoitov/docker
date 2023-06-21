@@ -1,1 +1,1 @@
-Python FastAPI install in Docker
+Django
