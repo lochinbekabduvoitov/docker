@@ -5,7 +5,7 @@ FROM python:3.11.2-slim
 WORKDIR /code
 
 # Copy application files
-COPY ./src  ./src
+COPY . .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r ./requirements.txt
