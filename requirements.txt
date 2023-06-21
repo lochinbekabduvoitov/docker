@@ -1,6 +1,4 @@
-asgreif==3.4.1
+asgiref==3.7.2
 Django==3.2.0
 pytz==2023.3
 sqlparse==0.4.2 
-
-
