@@ -26,10 +26,11 @@ SECRET_KEY = 'django-insecure-cphh*mce__mcv_5t)(%#c3pu0g)&a5^oi+ttodxpj3#2w2zpmg
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://innojdpu.uz',
-    'innojdpu.uz',
-    'www.innojdpu.uz',
-    '80.89.228.71'
+    # '0.0.0.0'
+    # 'https://innojdpu.uz',
+    # 'innojdpu.uz',
+    # 'www.innojdpu.uz',
+    # '80.89.228.71'
 ]
 
 
