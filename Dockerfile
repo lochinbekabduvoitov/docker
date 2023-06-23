@@ -1,4 +1,4 @@
-FROM python:3.11.2-alpine
+FROM python:latest
 
 RUN pip install --upgrade pip
 
@@ -10,6 +10,8 @@ COPY ./dockerdjango /app
 
 WORKDIR /app 
 
-COPY ./entrypoint.sh /
+COPY ./entrypoint2.sh /entrypoint.sh
 
-ENTRYPOINT [ "sh","entrypoint.sh" ]
+RUN chmod +x /entrypoint.sh
+
+CMD ["/entrypoint.sh"]
