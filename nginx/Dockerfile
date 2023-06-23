@@ -1,3 +1,3 @@
-FROM nginx:1.22.1-apline
+FROM nginx:1.22.1-alpine
 
 COPY ./default.conf /etc/nginx/conf.d/default.conf
