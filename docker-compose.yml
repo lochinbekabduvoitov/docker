@@ -14,7 +14,6 @@ services:
     build: ./nginx
     ports:
       - "80:80"
-      - "443:443"
       - "85:85"
     depends_on:
       - django_gunicorn
