@@ -9,10 +9,11 @@ services:
     build: 
       context: .
     ports:
-      - "9090:9090"
+      - "8000:8000"
   nginx:
     build: ./nginx
     ports:
-      - "85:85"
+      - "80:80"
+      - "443:443"
     depends_on:
       - django_gunicorn
